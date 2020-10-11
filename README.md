@@ -35,3 +35,8 @@
 `lint:fix` - Fix problems in `.js` & `.jsx` files
 `stylelint` - Lint `.css` files
 `stylelint:fix` - Lint `.scss` files
+
+
+# Storybook
+
+`yarn storybook`
