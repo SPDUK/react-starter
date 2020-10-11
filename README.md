@@ -23,3 +23,15 @@
 - Netlify
 - Hopefully unable to push if build is broken (husky?)
 
+
+
+# Dev Setup
+*(Assumes VSCode)*
+- Install ESLint plugin
+- Install StyleLint plugin
+
+### Commands:
+`lint` - Lint `.js` & `.jsx` files
+`lint:fix` - Fix problems in `.js` & `.jsx` files
+`stylelint` - Lint `.css` files
+`stylelint:fix` - Lint `.scss` files

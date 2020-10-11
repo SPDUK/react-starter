@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
@@ -16,7 +17,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint  --ext=js --ext=jsx .",
-    "lint:fix": "eslint --ext=js --ext=jsx . --fix"
+    "lint:fix": "eslint --ext=js --ext=jsx . --fix",
+    "stylelint": "stylelint '**/*.scss' --syntax scss",
+    "stylelint:fix": "stylelint '**/*.scss' --fix --syntax scss",
+    "lint-all": "yarn lint && yarn stylelint",
+    "lint-all:fix": "yarn lint:fix && yarn stylelint:fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +45,9 @@
     "eslint-plugin-jest": "^24.1.0",
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "4.0.0"
+    "eslint-plugin-react-hooks": "4.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
