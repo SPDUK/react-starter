@@ -21,8 +21,7 @@
 ### Deployment
 
 - Netlify
-- Hopefully unable to push if build is broken (husky?)
-
+- Husky pre-commit linting and error messages to stop commiting of broken code
 
 
 # Dev Setup
