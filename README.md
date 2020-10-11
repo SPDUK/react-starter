@@ -29,6 +29,7 @@
 *(Assumes VSCode)*
 - Install ESLint plugin
 - Install StyleLint plugin
+- `.vscode/settings.json` should now automatically lint .js, .jsx & .scss files correctly in line with linting rules
 
 ### Commands:
 `lint` - Lint `.js` & `.jsx` files
