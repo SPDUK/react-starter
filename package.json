@@ -21,7 +21,12 @@
     "stylelint": "stylelint '**/*.scss' --syntax scss",
     "stylelint:fix": "stylelint '**/*.scss' --fix --syntax scss",
     "lint-all": "yarn lint && yarn stylelint",
-    "lint-all:fix": "yarn lint:fix && yarn stylelint:fix"
+    "lint-all:fix": "yarn lint:fix && yarn stylelint:fix",
+    "postinstall": "husky install"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": "eslint --ext=js --ext=jsx",
+    "**/*.{css,scss}": "stylelint --syntax scss"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +51,8 @@
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
+    "husky": "^5.0.0-alpha.6",
+    "lint-staged": "^10.4.0",
     "stylelint": "^13.7.2",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0"

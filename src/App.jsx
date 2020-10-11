@@ -14,12 +14,6 @@ function App() {
           {' '}
           and save to reload.
 
-
-
-
-
-
-          
         </p>
         <a
           className="app-link"
