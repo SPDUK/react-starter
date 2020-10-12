@@ -31,13 +31,13 @@ ___
 
 
 ### Deployment
-
 - Netlify
 - Husky (pre-commit linting and error messages)
 
 
-## Production setup
-- run `yarn` to 
+## Production setup (local)
+- run `yarn build` to build the React app
+- run `build-storybook` to build the Storybook app
 
 
 ___
