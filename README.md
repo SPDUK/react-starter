@@ -1,42 +1,51 @@
-# React Starter
+<h1 align="center"> React-starter </h1> <br>
 
 
-### Stack
 
+## Stack
 - Create React App
 - React Router
 - React Context API
 - CSS Modules (scss)
-- Formik or React-hook-form (TODO: set up)
-- Code splitting (loadable-components)
-- Jest, react-testing-library
-
-### Dev tools
-
-- ESLint - JS & React Linting  (AirBNB Style)
-- StyleLint - CSS Linting
+- React-hook-form
+- Code splitting (React.lazy & Suspense)
+- Chakra UI
+- Jest
+- react-testing-library
+- ESLint - *AirBnB Styleguide*
+- Husky - *v4*
+- StyleLint
 - Storybook
+
+___
+
+## Dev Setup
+- Install [Yarn package manager v1](https://classic.yarnpkg.com/en/docs/install/#mac-stable) 
+- Install [VSCode ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- Install [VSCode StyleLint plugin](https://github.com/stylelint/vscode-stylelint)
+- run `yarn` in the console to install dependencies
+- run `yarn start` to launch the React dev server
+- run `yarn storybook` to launch the Storybook dev server
+
+___
 
 
 ### Deployment
 
 - Netlify
-- Husky pre-commit linting and error messages to stop commiting of broken code
+- Husky (pre-commit linting and error messages)
 
 
-# Dev Setup
-*(Assumes VSCode)*
-- Install ESLint plugin
-- Install StyleLint plugin
-- `.vscode/settings.json` should now automatically lint .js, .jsx & .scss files correctly in line with linting rules
-
-### Commands:
-`lint` - Lint `.js` & `.jsx` files
-`lint:fix` - Fix problems in `.js` & `.jsx` files
-`stylelint` - Lint `.css` files
-`stylelint:fix` - Lint `.scss` files
+## Production setup
+- run `yarn` to 
 
 
-# Storybook
+___
 
-`yarn storybook`
+## Scripts
+- `yarn start` - Start the React development server
+- `yarn storybook` - Start the Storybook development server
+- `yarn lint` - Lint `.js` & `.jsx` files
+- `yarn lint:fix` - Fix problems in `.js` & `.jsx` files
+- `yarn stylelint` - Lint `.css` files
+- `yarn stylelint:fix` - Fix problems in `.scss` files

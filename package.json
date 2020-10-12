@@ -23,13 +23,18 @@
     "stylelint:fix": "stylelint '**/*.scss' --fix --syntax scss",
     "lint-all": "yarn lint && yarn stylelint",
     "lint-all:fix": "yarn lint:fix && yarn stylelint:fix",
-    "postinstall": "husky install",
+    "prepare": "node ./node_modules/husky/lib/installer/bin install",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
   "lint-staged": {
     "**/*.{js,jsx}": "eslint --ext=js --ext=jsx",
     "**/*.{css,scss}": "stylelint --syntax scss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -62,7 +67,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.0",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "4.0.0",
-    "husky": "^5.0.0-alpha.6",
+    "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
     "react-is": "^16.13.1",
     "stylelint": "^13.7.2",
