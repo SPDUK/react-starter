@@ -19,7 +19,11 @@
 
 ___
 
-## Dev Setup
+### Make it yours
+- `git clone git@github.com:SPDUK/react-starter.git reponame` (*replace reponame with your project name*)
+- `git remote set-url origin git@github.com:name/repo.git`  (*replace with your new github repo url*)
+
+### Dev Setup
 - Install [Yarn package manager v1](https://classic.yarnpkg.com/en/docs/install/#mac-stable) 
 - Install [VSCode ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - Install [VSCode StyleLint plugin](https://github.com/stylelint/vscode-stylelint)
